@@ -3,6 +3,9 @@
 * {
   box-sizing: border-box;
 }
+.wrap {
+  overflow: hidden;
+}
 .header {
   height: 60px;
   width: 100%;
@@ -81,7 +84,7 @@
     }
   }
 }
-
+// メインコンテンツ
 .content {
   width: 100%;
   margin: 0 auto;
@@ -90,9 +93,10 @@
     height: 600px;
     box-shadow: 10px 0 10px 0 rgba(0, 0, 0 , 0.5);
     margin-top: 60px;
+    background-size: cover;
   }
   &__about {
-    background-color: $main-color;
+    background-color: white;
     font-size: 60px;
     font-family: $font;
     text-align: center;
@@ -104,7 +108,7 @@
     0px 34px 30px rgba(0,0,0,0.1);
   }  
   &__main{
-    background-color: $main-color;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     &__left img {
@@ -112,17 +116,247 @@
       height: 250px;
       margin: 100px 50px;
       float: left;
+      display: block;
     }
     &__right {
-      margin: 100px;
+      margin: 50px;
       &__bold {
         font-weight: bold;
         margin: 10px 0;
       }
       &__text {
         line-height: 25px;
+        padding-left: 1em;
       }
     }
   } 
-}
-  
+  &__skill {
+    background-color: $main-color;
+    padding: 50px 50px;
+    width: 100%;
+    &__tag {
+    margin-bottom: 20px ;
+    font-size: 60px;
+    font-family: $font;
+    text-align: center;
+    text-shadow:
+    0px 3px 0px #b2a98f,
+    0px 14px 10px rgba(0,0,0,0.15),
+    0px 24px 2px rgba(0,0,0,0.1),
+    0px 34px 30px rgba(0,0,0,0.1);
+    }     
+    &__index {
+      text-align: center;
+      margin-bottom: 30px;
+    }   
+    &__tag__item {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      &__card1 {
+        width: 350px;
+        height: 200px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 5px 5px 8px 5px #ccc;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        &__html {
+          font-size: 50px;
+          color: #FF7728;
+          margin: 10px 0 0 0;
+        }
+        &__title {
+          margin-bottom: 10px;
+          font-weight: bold;
+          font-size: 20px;
+        } 
+        &__text {
+          padding: 0 25px;
+        }    
+        }
+        &__card2 {
+          width: 350px;
+          height: 200px;
+          background: #fff;
+          border-radius: 5px;
+          box-shadow: 5px 5px 8px 5px #ccc;
+          text-align: center;
+          margin: 0 auto;  
+          &__css {
+            font-size: 50px;
+            color: #4CB1F7;
+            margin: 10px 0 0 0;
+          }
+          &__title {
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 20px;
+          } 
+          &__text {
+            padding: 0 25px;
+          }    
+        }
+        &__card3 {
+          width: 350px;
+          height: 200px;
+          background: #fff;
+          border-radius: 5px;
+          box-shadow: 5px 5px 8px 5px #ccc;
+          text-align: center;
+          margin: 0 auto;
+          &__js {
+            font-size: 50px;
+            color: #F0E953;
+            margin: 10px 0 0 0;
+          }
+          &__title {
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 20px;
+          } 
+          &__text {
+            padding: 0 25px;
+          }    
+        }
+        &__card4 {
+          width: 350px;
+          height: 200px;
+          background: #fff;
+          border-radius: 5px;
+          box-shadow: 5px 5px 8px 5px #ccc;
+          text-align: center;
+          margin: 0 auto;
+          margin-bottom: 20px;
+          &__jq {
+            font-size: 50px;
+            color: #1E9EFF;
+            margin: 10px 0 0 0;
+          }
+          &__title {
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 20px;
+          } 
+          &__text {
+            padding: 0 25px;
+          }    
+        }
+        &__card5 {
+          width: 350px;
+          height: 200px;
+          background: #fff;
+          border-radius: 5px;
+          box-shadow: 5px 5px 8px 5px #ccc;
+          text-align: center;
+          margin: 0 auto;
+          &__rb img{
+            margin: 30px 0 10px 0;
+          }
+          &__title {
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 20px;
+          } 
+          &__text {
+            padding: 0 25px;
+          }    
+        }
+        &__card6 {
+          width: 350px;
+          height: 200px;
+          background: #fff;
+          border-radius: 5px;
+          box-shadow: 5px 5px 8px 5px #ccc;
+          text-align: center;
+          margin: 0 auto;
+          &__rails {
+            font-size: 50px;
+            color: #F0E953;
+            margin: 10px 0 0 0;
+          }
+          &__title {
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 20px;
+          } 
+          &__text {
+            padding: 0 25px;
+          }    
+        }
+        &__card7 {
+          width: 350px;
+          height: 200px;
+          background: #fff;
+          border-radius: 5px;
+          box-shadow: 5px 5px 8px 5px #ccc;
+          text-align: center;
+          margin: 0 auto;
+          &__git {
+            font-size: 50px;
+            color: #FF7728;     
+            margin: 10px 0 0 0;
+          }
+          &__title {
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 20px;
+          } 
+          &__text {
+            padding: 0 25px;
+            margin-bottom: 5px;
+            
+          }    
+        }
+        &__card8 {
+          width: 350px;
+          height: 200px;
+          background: #fff;
+          border-radius: 5px;
+          box-shadow: 5px 5px 8px 5px #ccc;
+          text-align: center;
+          margin: 0 auto;
+          padding: 0 25px;
+          &__seo {
+            font-size: 50px;
+            color: #12E0EA;
+            margin: 10px 0 0 0;
+          }
+          &__title {
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 20px;
+          } 
+          &__text {
+            padding: 0 25px;
+            margin-left: 2em;
+          }    
+        }
+      }
+    }
+
+  &__works {
+    padding: 50px 50px;
+    width: 100%;
+    &__tag {
+    margin-bottom: 20px ;
+    font-size: 60px;
+    font-family: $font;
+    text-align: center;
+    text-shadow:
+    0px 3px 0px #b2a98f,
+    0px 14px 10px rgba(0,0,0,0.15),
+    0px 24px 2px rgba(0,0,0,0.1),
+    0px 34px 30px rgba(0,0,0,0.1);
+    }
+    &__index {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+  }
+
+
+  }
+
