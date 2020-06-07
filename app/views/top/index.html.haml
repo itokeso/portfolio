@@ -164,17 +164,72 @@
       .content__works__tag
         Works
       .content__works__index
-        スクールや個人開発制作物です。
+        スクールや個人開発での制作物です。
         %br/
         クリックするとgithubソースコードに飛びます
       .content__works__item
         .content__works__item__card
-          = image_tag 'image1.png', size:"300x200"
-          .content__works__item__card__text
-            ポートフォリオサイト（当サイト）
-            
+          = link_to('https://github.com/itokeso/portfolio', class: 'list-content') do
+            = image_tag 'image1.png', size:"350x150"
+            .content__works__item__card__title
+              ポートフォリオサイト（当サイト）
+            .content__works__item__card__text
+              自己紹介やスキル、成果物を載せたポートフォリオサイトです。プログラミング学習してきた事をアウトプットするために作成しました。
 
+        .content__works__item__card
+          = link_to('https://github.com/itokeso/todo-app1', class: 'list-content') do
+            = image_tag 'work1.png', size:"350x150"
+            .content__works__item__card__title
+              TODOリスト作成アプリ
+            .content__works__item__card__text
+              ただやるべきことを記入できるだけではなく、リストに関係する詳細やメモを残すことでどのようにこのタスクを終了するべきかを簡単に理解できる仕様とすることを心がけました。
           
+        .content__works__item__card
+          = link_to('https://github.com/itokeso/my_blog', class: 'list-content') do
+            = image_tag 'blog.png', size:"350x150"
+            .content__works__item__card__title
+              My_blog
+            .content__works__item__card__text
+              My_blogは複数人で使用できるブログでログイン機能、マイページ、編集・削除機能などrailsの基礎的な部分が実装されています。
+
+        .content__works__item__card
+          = link_to('https://github.com/itokeso/pictweet', class: 'list-content') do
+            = image_tag 'pic.png', size:"350x150"
+            .content__works__item__card__title
+              PicTweet
+            .content__works__item__card__text
+              画像と文字をみんなで投稿していくシンプルなサービスです。コメントも投稿する事ができ、コメント送信機能にはajaxを使用した非同期通信が出来るよう実装しています。
+        
+        .content__works__item__card
+          = link_to('https://github.com/itokeso/chat', class: 'list-content') do
+            = image_tag 'chat.png', size:"350x150"
+            .content__works__item__card__title
+              ChatSpace
+            .content__works__item__card__text
+              グループを作りグループ内でのチャットが可能です。メンバーの招待や画像送信機能・チャットの自動更新機能などが実装されています。
+        
+        .content__works__item__card
+          = link_to('https://github.com/itokeso/freemarket_app_71b', class: 'list-content') do
+            = image_tag 'free.png', size:"350x150"
+            .content__works__item__card__title
+              Freemarket
+            .content__works__item__card__text
+              スクールの最終課題で、チームでフリーマーケットサイトのコピーを行いました。基本的なサービスに加えて商品の出品、編集、クレジットカードでの購入などの実装がされています。
+    .content__blog
+      .content__blog__tag
+        Blog
+      .content__blog__index
+        2019年2月から個人ブログの運営を開始しました。
+        %br/
+        ジャンルはお金の教養や筋トレなどで、SEOやライティングの知識が得られました。
+        .content__blog__index__blog
+          = link_to 'ブログへのリンクはこちら', 'https://headwaybasket.com/', class:"blog"      
+        %br/
+        2020年6月からはプログラミング学習で学んだ事をアウトプットするための2ndブログも作成しました。
+        %br/
+        投稿数はまだほとんどありませんが少しずつ増やしていこうと思います。
+        .content__blog__index__blog
+          = link_to '2ndブログ', '#', class:"blog"      
+      .content__blog__item
+
       
-
-
