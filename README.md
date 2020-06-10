@@ -1,24 +1,14 @@
-# README
+# 概要
+自己紹介やスキル、成果物を載せたポートフォリオサイトです。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 開発の経緯
+自分が今まで作ってきたものをまとめてアウトプットしてみたかったのもありますが、就職活動等で履歴書や職務経歴書だけでは分からない性格的な部分まで見てもらえたらより一層お互いにとって良いマッチングになるのではないかと思い作成しました！
 
-Things you may want to cover:
+## 使用技術一覧
+|種別|名称|
+|------|----|
+|開発言語|Ruby(ver 2.5.1), jquery|
+|フレームワーク|Ruby on Rails(ver 5.2.4.1)|
+|マークアップ|HTML,CSS(Sass)|
+|データベース|MYSQL|
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
