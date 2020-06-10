@@ -47,7 +47,7 @@
         .content__main__right__bold
           【経歴】
         .content__main__right__bold
-          2012年3月 : 大分大学　経済学部　経営システム学科卒業
+          2012年3月 : 大分大学 経済学部 経営システム学科卒業
         .content__main__right__bold
           2012年4月 〜 2020年2月 : 食品スーパー（惣菜主任・副店長）
         .content__main__right__text
@@ -87,7 +87,7 @@
           %br/
           ④ udemy 「もう怖くないGit! チーム開発で必要なGIt完全マスター」
           %br/
-          ⑤ paizaラーニング　Bランク取得
+          ⑤ paizaラーニング Bランク取得
 
 
     .content__skill
@@ -131,7 +131,7 @@
 
         .content__skill__tag__item__card5
           .content__skill__tag__item__card5__rb
-            = image_tag 'ruby.png', size: '30x30'
+            = image_tag 'ruby.png', size: '35x35'
           .content__skill__tag__item__card5__title
             Ruby
           .content__skill__tag__item__card5__text
@@ -159,7 +159,7 @@
           .content__skill__tag__item__card8__title
             SEO
           .content__skill__tag__item__card8__text
-          　個人でブログ運営しており独学ですがSEOの知識・セールスライティングの知識があります。　　　　
+            個人でブログ運営しており独学ですがSEOの知識・セールスライティングの知識があります。
     .content__works
       .content__works__tag
         Works
@@ -168,48 +168,48 @@
         %br/
         クリックするとgithubソースコードに飛びます
       .content__works__item
-        .content__works__item__card
-          = link_to('https://github.com/itokeso/portfolio', class: 'list-content') do
+        = link_to('https://github.com/itokeso/portfolio', class: 'list-content') do
+          .content__works__item__card
             = image_tag 'image1.png', size:"350x150"
             .content__works__item__card__title
               ポートフォリオサイト（当サイト）
             .content__works__item__card__text
-              自分が今まで作ってきたものをまとめてアウトプットしてみたかったのもありますが、就職活動等で履歴書や職務経歴書だけでは分からない性格的な部分まで見てもらえたらより一層お互いにとって良いマッチングになるのではないかと思い作成しました！
+              就職活動等で履歴書だけでは分からない性格的な部分まで見てもらえたらより一層お互いにとって良いマッチングになるのではないかと思い作成しました。
 
-        .content__works__item__card
-          = link_to('https://github.com/itokeso/todo-app1', class: 'list-content') do
+        = link_to('https://github.com/itokeso/todo-app1', class: 'list-content') do
+          .content__works__item__card
             = image_tag 'work1.png', size:"350x150"
             .content__works__item__card__title
               TODOリスト作成アプリ
             .content__works__item__card__text
               ただやるべきことを記入できるだけではなく、リストに関係する詳細やメモを残すことでどのようにこのタスクを終了するべきかを簡単に理解できる仕様とすることを心がけました。
           
-        .content__works__item__card
-          = link_to('https://github.com/itokeso/my_blog', class: 'list-content') do
+        = link_to('https://github.com/itokeso/my_blog', class: 'list-content') do
+          .content__works__item__card
             = image_tag 'blog.png', size:"350x150"
             .content__works__item__card__title
               My_blog(ブログアプリ)
             .content__works__item__card__text
               My_blogは複数人で使用できるブログでログイン機能、マイページ、編集・削除機能などrailsの基礎的な部分が実装されています。
 
-        .content__works__item__card
-          = link_to('https://github.com/itokeso/pictweet', class: 'list-content') do
+        = link_to('https://github.com/itokeso/pictweet', class: 'list-content') do
+          .content__works__item__card
             = image_tag 'pic.png', size:"350x150"
             .content__works__item__card__title
               PicTweet(写真投稿アプリ)
             .content__works__item__card__text
               画像と文字をみんなで投稿していくシンプルなサービスです。コメントも投稿する事ができ、コメント送信機能にはajaxを使用した非同期通信が出来るよう実装しています。
         
-        .content__works__item__card
-          = link_to('https://github.com/itokeso/chat', class: 'list-content') do
+        = link_to('https://github.com/itokeso/chat', class: 'list-content') do
+          .content__works__item__card
             = image_tag 'chat.png', size:"350x150"
             .content__works__item__card__title
-              ChatSpace(グループチャットアプリ)
+              ChatSpace(チャットアプリ)
             .content__works__item__card__text
               グループを作りグループ内でのチャットが可能です。メンバーの招待や画像送信機能・チャットの自動更新機能などが実装されています。
         
-        .content__works__item__card
-          = link_to('https://github.com/itokeso/freemarket_app_71b', class: 'list-content') do
+        = link_to('https://github.com/itokeso/freemarket_app_71b', class: 'list-content') do
+          .content__works__item__card
             = image_tag 'free.png', size:"350x150"
             .content__works__item__card__title
               Freemarket(フリマアプリ)
@@ -229,7 +229,59 @@
         %br/
         投稿数はまだほとんどありませんが少しずつ増やしていこうと思います。
         .content__blog__index__blog
-          = link_to '2ndブログ', '#', class:"blog"      
+          = link_to '2ndブログ', 'https://over-thirty-programming.info/', class:"blog"      
+          
       .content__blog__item
+        = link_to('https://headwaybasket.com/training/', class: 'blog-list') do
+          .content__blog__item__site
+            = image_tag 'trainning.jpg', size: "250x140" ,class:"blog-image"
+            .content__blog__item__site__title
+              筋トレ始めて１年！体はどれだけ変わった？
+        .content__blog__item__right
+          筋トレを始めて１年で体の変化がどれだけあったかの解説を写真で振り返りながら解説しました。
+          %br/
+          オススメの器具やサプリメントなどを紹介しています。
+          %br/
+          「筋トレ 1年 変化」というキーワードで検索順位３位を獲得しました。
+          
+        = link_to('https://headwaybasket.com/macro-diet/', class: 'blog-list') do
+          .content__blog__item__site
+            = image_tag 'man.jpg', size: "250x140",class:"blog-image"
+            .content__blog__item__site__title
+              それで合ってる？正しいマクロ管理ダイエット法！
+        .content__blog__item__right
+          間違ったダイエットをしてリバウンドや体の調子を崩す人が多いので,ダイエットの基本となるマクロ管理について解説しました。
+          %br/
+          3大栄養素である「炭水化物」「資質」「タンパク質」のバランスやカロリーの構成やダイエットのステップを解説しています。
 
+        = link_to('https://headwaybasket.com/income-tax-municipal-tax/', class: 'blog-list') do
+          .content__blog__item__site
+            = image_tag 'girl.jpg', size: "250x140",class:"blog-image"
+            .content__blog__item__site__title
+              給与明細の所得税と住民税って？
+        .content__blog__item__right
+          サラリーマンをしていると給与天引きで知らぬ間に色々と引かれてしまいます。
+          %br/
+          サラリーマンなら知っておきたい給与明細の中身について解説しています。
       
+        = link_to('https://headwaybasket.com/menz-body-shaver/', class: 'blog-list') do
+          .content__blog__item__site
+            = image_tag 'ke.jpg', size: "250x140",class:"blog-image"
+            .content__blog__item__site__title
+              男も体毛を処理する時代⁉おすすめのメンズボディトリマーは？
+        .content__blog__item__right
+          お金の教養や筋トレだけでなく、メンズ美容についての記事もあります。
+          %br/
+          最近は脱毛やエステなど美容に興味がある男性も増えてきているので自分も色々やってみようと思い、自分の体で実験しています。
+
+        = link_to('https://over-thirty-programming.info/readme/', class: 'blog-list') do
+          .content__blog__item__site
+            = image_tag 'gif.png', size: "250x140",class:"blog-image"
+            .content__blog__item__site__title
+              READMEにgif動画を貼る方法は？わかりやすく解説！
+        .content__blog__item__right
+          プログラミングアウトプット用のブログです。
+          %br/
+          READMEに製作物のgif動画を貼りたいと思い自分も調べてみました。
+          %br/
+          画像も使い、出来るだけわかりやすく解説しています。

@@ -84,6 +84,7 @@
     }
   }
 }
+
 // メインコンテンツ
 .content {
   width: 100%;
@@ -95,6 +96,8 @@
     margin-top: 60px;
     background-size: cover;
   }
+
+  // 紹介
   &__about {
     background-color: white;
     font-size: 60px;
@@ -130,6 +133,8 @@
       }
     }
   } 
+
+  // スキル
   &__skill {
     background-color: $main-color;
     padding: 50px 50px;
@@ -251,6 +256,7 @@
           box-shadow: 5px 5px 8px 5px #ccc;
           text-align: center;
           margin: 0 auto;
+          margin-bottom: 10px;
           &__rb img{
             margin: 30px 0 10px 0;
           }
@@ -273,7 +279,7 @@
           margin: 0 auto;
           &__rails {
             font-size: 50px;
-            color: #F0E953;
+            color: #F5216A;
             margin: 10px 0 0 0;
           }
           &__title {
@@ -317,7 +323,6 @@
           box-shadow: 5px 5px 8px 5px #ccc;
           text-align: center;
           margin: 0 auto;
-          padding: 0 25px;
           &__seo {
             font-size: 50px;
             color: #12E0EA;
@@ -330,12 +335,13 @@
           } 
           &__text {
             padding: 0 25px;
-            margin-left: 2em;
+            margin-bottom: 5px;
           }    
         }
       }
     }
 
+    // 紹介
   &__works {
     padding: 50px 50px;
     width: 100%;
@@ -359,6 +365,7 @@
     .list-content {
       text-decoration: none;
       color: black;
+      // margin:10px 10px ;
     }
     &__item {
       display: flex;
@@ -372,11 +379,13 @@
         box-shadow: 5px 5px 8px 5px #ccc;
         text-align: center;
         margin: 0 auto;
-        margin-bottom: 20px;
+        margin-right: 15px;
+        margin-bottom: 30px;
         color: black;
         &:hover {
           opacity: 0.8;
           box-shadow: 10px 10px 16px 10px #ccc;
+          transition: 0.3s;
         }
         &__title {
           margin: 10px 0;
@@ -390,6 +399,8 @@
       }
     }
   }
+
+  // ブログ
   &__blog {
     padding: 50px 50px;
     width: 100%;
@@ -408,6 +419,81 @@
     &__index {
       text-align: center;
       margin-bottom: 30px;
+      // ブログリンク
+      .blog {
+        text-decoration: none;
+      }
+    }
+
+    // 個別ブログリンク
+    .blog-list {
+      text-decoration: none;
+      margin: 0 auto;
+    }
+    &__item {
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      &__site {
+        position: relative;
+        padding: 5px;
+        width: 550px;
+        height: 160px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 5px 5px 8px 5px #ccc;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        color: black;
+        display: flex;
+        border-radius: 5px;
+        box-shadow: 5px 5px 8px 5px #ccc;
+
+        &:hover {
+          opacity: 0.8;
+          box-shadow: 10px 10px 16px 10px #ccc;
+          transition: 0.3s;
+        }
+        .blog-image {
+          margin-top: 5px;
+        }
+        &__title {
+          display: flex;
+          font-weight: bold;
+          font-size: 20px;
+          align-items: center;
+        }
+      }
+      &__right {
+        display: flex;
+        align-items: center;
+        width: 500px;
+        height: 160px;
+        background: #81F7FF;
+        border-radius: 5px;
+        margin: 0 120px 20px  0;
+        color: black;
+        border-radius: 5px;
+        position: relative;
+        padding: 20px;
+        opacity: 0.8;
+        box-shadow: 5px 5px 8px 5px #ccc;
+
+        &::before {
+          content:'';
+          position: absolute;
+          display: block;
+          width: 0;
+          height: 0;
+          left: -15px;
+          top: 50px;
+          border-right: 15px solid #81F7FF;
+          border-top: 15px solid transparent;
+          border-bottom: 15px solid transparent;
+        }
+      }
+
     }
   }
 }
