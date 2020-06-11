@@ -1,6 +1,7 @@
 .wrapper
   .header
     =link_to 'Keisuke Ito', "#" , class:"header__logo"
+    %i.fa.fa-bars
     .header__list
       = link_to 'Home', '#',class:"header__list__home"
       = link_to 'About', '#' ,class:"header__list__about"
@@ -8,7 +9,7 @@
       = link_to 'Works', '#', class:"header__list__works"
       = link_to 'Blogs','#' ,class:"header__list__blog"
       = link_to 'Contact','#', class:"header__list__contact"
-      %i.fa.fa-bars
+    
   .content
     .content__image
       = image_tag 'image1.png', class: "main__image"
@@ -317,8 +318,9 @@
         = link_to("https://twitter.com/ZtJIJkaTXdkPawY", class: "contact-link") do
           = icon('fab', 'twitter')
           %span プロフィールはこちら
-
   .footer
     %p.footer__text
       ©KEISUKE ITO. All Rights Reserved.
+    %i.fa.fa-chevron-circle-up
+    
     
