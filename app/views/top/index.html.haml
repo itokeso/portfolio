@@ -8,15 +8,36 @@
       = link_to 'Works', '#', class:"header__list__works"
       = link_to 'Blogs','#' ,class:"header__list__blog"
       = link_to 'Contact','#', class:"header__list__contact"
-
+      %i.fa.fa-bars
   .content
     .content__image
-      = image_tag 'image1.png'
+      = image_tag 'image1.png', class: "main__image"
     .content__about
       About
     .content__main
       .content__main__left
-        = image_tag 'image3.jpeg'
+        = image_tag 'image3.jpeg', class: "content__main__left__image"
+        .content__main__left__image__item1
+          = link_to('https://twitter.com/ZtJIJkaTXdkPawY', class: "content__main__left__image__icon1") do
+            = icon('fab', 'twitter')
+            %span.content__main__left__image__text
+              Twitter
+        .content__main__left__image__item2
+          = link_to(' https://github.com/itokeso', class: "content__main__left__image__icon2") do
+            = icon('fab','github')
+            %span.content__main__left__image__text 
+              Github
+        .content__main__left__image__item3
+          = link_to('https://headwaybasket.com/', class: "content__main__left__image__icon3") do
+            = icon('fas', 'blog')
+            %span.content__main__left__image__text
+              Blog
+        .content__main__left__image__item4
+          = link_to('https://over-thirty-programming.info/', class: "content__main__left__image__icon3") do
+            = icon('fas', 'blog')
+            %span.content__main__left__image__text
+              2ndBlog
+
       .content__main__right
         .content__main__right__text
           初めまして、伊藤 圭亮（いとうけいすけ）と申します。
@@ -160,6 +181,7 @@
             SEO
           .content__skill__tag__item__card8__text
             個人でブログ運営しており独学ですがSEOの知識・セールスライティングの知識があります。
+
     .content__works
       .content__works__tag
         Works
@@ -215,6 +237,7 @@
               Freemarket(フリマアプリ)
             .content__works__item__card__text
               スクールの最終課題で、チームでフリーマーケットサイトのコピーを行いました。基本的なサービスに加えて商品の出品、編集、クレジットカードでの購入などの実装がされています。
+
     .content__blog
       .content__blog__tag
         Blog
@@ -223,13 +246,13 @@
         %br/
         ジャンルはお金の教養や筋トレなどで、SEOやライティングの知識が得られました。
         .content__blog__index__blog
-          = link_to 'ブログへのリンクはこちら', 'https://headwaybasket.com/', class:"blog"      
+          = link_to 'ブログへのリンクはこちら', 'https://headwaybasket.com/', class:"content__blog__index__blog__link"      
         %br/
         2020年6月からはプログラミング学習で学んだ事をアウトプットするための2ndブログも作成しました。
         %br/
         投稿数はまだほとんどありませんが少しずつ増やしていこうと思います。
         .content__blog__index__blog
-          = link_to '2ndブログ', 'https://over-thirty-programming.info/', class:"blog"      
+          = link_to '2ndブログ', 'https://over-thirty-programming.info/', class: "content__blog__index__blog__link"      
           
       .content__blog__item
         = link_to('https://headwaybasket.com/training/', class: 'blog-list') do
@@ -272,7 +295,7 @@
         .content__blog__item__right
           お金の教養や筋トレだけでなく、メンズ美容についての記事もあります。
           %br/
-          最近は脱毛やエステなど美容に興味がある男性も増えてきているので自分も色々やってみようと思い、自分の体で実験しています。
+          最近は脱毛やエステなど美容に興味がある男性も増えてきているので自分も色々やってみようと思い、自分で実験しています。
 
         = link_to('https://over-thirty-programming.info/readme/', class: 'blog-list') do
           .content__blog__item__site
@@ -285,3 +308,17 @@
           READMEに製作物のgif動画を貼りたいと思い自分も調べてみました。
           %br/
           画像も使い、出来るだけわかりやすく解説しています。
+
+    .content__contact
+      .content__contact__tag
+        contact
+      .content__contact__index
+        ご質問やご相談はtwitterのDMより受け付けております。
+        = link_to("https://twitter.com/ZtJIJkaTXdkPawY", class: "contact-link") do
+          = icon('fab', 'twitter')
+          %span プロフィールはこちら
+
+  .footer
+    %p.footer__text
+      ©KEISUKE ITO. All Rights Reserved.
+    

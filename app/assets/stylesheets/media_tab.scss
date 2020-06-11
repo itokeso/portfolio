@@ -1,0 +1,35 @@
+@media (max-width: 1000px) {
+
+  .content__main__left__image{
+    position: relative;
+    &__item1 {
+      top: 1160px;
+    }
+    &__item2 {
+      top: 1190px;
+    }
+    &__item3 {
+      top: 1220px;
+    }
+    &__item4 {
+      top: 1250px;
+    }
+  }
+  .content__skill__tag__item__card6{
+    margin-bottom: 20px;
+  }
+  .content__blog__item__right {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    width: 550px;
+    &::before {
+      left: 20px;
+      top: -15px;
+    }
+  }
+  .content__blog__item__site {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}

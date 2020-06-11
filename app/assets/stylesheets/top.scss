@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
+
 }
 .wrap {
   overflow: hidden;
@@ -14,17 +16,15 @@
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  z-index: 1;
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  z-index: 1;
   &__logo {
     font-family: 'Fredoka One', cursive;
     font-size: 30px;
     color:black;
-    text-decoration: none;
     margin-left: 20px;
   }
   &__list__home {
-    text-decoration: none;
     color: black;
     margin-right: 10px;
     &:hover {
@@ -34,7 +34,6 @@
     }
   }
   &__list__about {
-    text-decoration: none;
     color: black;
     margin-right: 10px;
     &:hover {
@@ -44,7 +43,6 @@
     }
   }
   &__list__skills {
-    text-decoration: none;
     color: black;
     margin-right: 10px;
     &:hover {
@@ -54,7 +52,6 @@
     }
   }
   &__list__works {
-    text-decoration: none;
     color: black;
     margin-right: 10px;
     &:hover {
@@ -64,7 +61,6 @@
     }
   }
   &__list__blog {
-    text-decoration: none;
     color: black;
     margin-right: 10px;
     &:hover {
@@ -74,7 +70,6 @@
     }
   }
   &__list__contact {
-    text-decoration: none;
     color: black;
     margin-right: 10px;
     &:hover {
@@ -82,6 +77,10 @@
       color: #F5CC26;
       transition: 0.3s;
     }
+  }
+  
+  .fa.fa-bars {
+    display: none;
   }
 }
 
@@ -114,13 +113,66 @@
     background-color: white;
     display: flex;
     justify-content: space-between;
-    &__left img {
+    &__left__image {
       width: 200px;
       height: 250px;
       margin: 100px 50px;
       float: left;
       display: block;
-    }
+      position: relative;
+      &__item1 {
+        position: absolute;
+        color: black;
+        left: 105px;
+        bottom: -400px;
+        &:hover {
+          opacity: 0.6;
+          transition: 0.3s;
+        }
+      }
+      &__item2 {
+        position: absolute;
+        color: black;
+        left: 105px;
+        bottom: -430px;
+        &:hover {
+          opacity: 0.6;
+          transition: 0.3s;
+        }
+      }
+      &__item3 {
+        position: absolute;
+        color: black;
+        left: 105px;
+        bottom: -460px;
+        &:hover {
+          opacity: 0.6;
+          transition: 0.3s;
+        }
+      }
+      &__item4 {
+        position: absolute;
+        color: black;
+        left: 105px;
+        bottom: -490px;
+        &:hover {
+          opacity: 0.6;
+          transition: 0.3s;
+        }
+      }
+
+      // アイコン
+      &__icon1 i{
+        color: #55acee;
+      }
+      &__icon2 i{
+        color: black;
+      }
+      &__icon3 i{
+        color: #ff8c00;
+      } 
+    }   
+
     &__right {
       margin: 50px;
       &__bold {
@@ -341,7 +393,7 @@
       }
     }
 
-    // 紹介
+    // 作品紹介
   &__works {
     padding: 50px 50px;
     width: 100%;
@@ -361,10 +413,10 @@
       margin-bottom: 30px;
     }
 
-    // リンク
+    // 作品リンク
     .list-content {
-      text-decoration: none;
       color: black;
+      margin: 0 auto;
       // margin:10px 10px ;
     }
     &__item {
@@ -379,7 +431,6 @@
         box-shadow: 5px 5px 8px 5px #ccc;
         text-align: center;
         margin: 0 auto;
-        margin-right: 15px;
         margin-bottom: 30px;
         color: black;
         &:hover {
@@ -419,15 +470,15 @@
     &__index {
       text-align: center;
       margin-bottom: 30px;
-      // ブログリンク
-      .blog {
-        text-decoration: none;
+      &__blog__link:hover {
+        opacity: 0.6;
+        transition: 0.3s;
       }
     }
 
+
     // 個別ブログリンク
     .blog-list {
-      text-decoration: none;
       margin: 0 auto;
     }
     &__item {
@@ -496,5 +547,39 @@
 
     }
   }
+  &__contact {
+    padding: 50px 50px;
+    width: 100%;
+    &__tag {
+    margin-bottom: 20px ;
+    font-size: 60px;
+    font-family: $font;
+    text-align: center;
+    text-shadow:
+    0px 3px 0px #b2a98f,
+    0px 14px 10px rgba(0,0,0,0.15),
+    0px 24px 2px rgba(0,0,0,0.1),
+    0px 34px 30px rgba(0,0,0,0.1);
+    }
+    &__index {
+      text-align: center;
+      margin-bottom: 30px; 
+      .contact-link:hover {
+        opacity: 0.6;
+        transition: 0.3s;
+      }
+    }
+  }
 }
-
+.footer {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #2D2C34;
+  color: white;
+  padding:0 50px ;
+  &__text {
+    margin: 0 auto;
+    font-size: 12px;
+  }
+}
