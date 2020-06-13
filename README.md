@@ -8,7 +8,6 @@
 アニメーションを使ってサイトに動きを出したかったのでwow.jsを使い動きを出しています。<br>
 また今まで挑戦していなかったレスポンシブデザインにも対応しており、jqueryでのハンバーガーメニュー実装にチャレンジしました。
 
-
 ## 使用技術一覧
 |種別|名称|
 |------|----|
@@ -18,3 +17,6 @@
 |データベース|MYSQL|
 |本番環境|AWS|
 
+## DEMO
+![](https://raw.github.com/wiki/itokeso/portfolio/gif/image.gif)
+![](https://raw.github.com/wiki/itokeso/portfolio/gif/image2.gif)
