@@ -12,7 +12,7 @@
             %li= link_to 'Works', '#works'
             %li= link_to 'Blogs','#blogs' 
             %li= link_to 'Contact','#contact'
-    .header__list
+    .header__list.wow.zoomIn
       = link_to 'Home', '#',class:"header__list__home"
       = link_to 'About', '#about' ,class:"header__list__about"
       = link_to 'Skills','#skills' , class:"header__list__skills"
@@ -22,11 +22,13 @@
     %i.fa.fa-bars#btn
   .content
     .content__image
-      = image_tag 'image1.png', class: "main__image"
+      = image_tag 'main.png', class: "main__image"
+      .content__image__text.wow.fadeIn{"data-wow-delay" => "0.5s"}
+        Welcome to My Portfolio
     .content__about#about 
       About
     .content__main
-      .content__main__left
+      .content__main__left.wow.fadeIn{"data-wow-delay" => '0.5s'}
         = image_tag 'image3.jpeg', class: "content__main__left__image"
         .content__main__left__image__item1
           = link_to('https://twitter.com/ZtJIJkaTXdkPawY', class: "content__main__left__image__icon1") do
@@ -127,9 +129,9 @@
         Skills
       .content__skill__index
         私が学習した技術一覧です。
-      .content__skill__tag__item
+      .content__skill__tag__item.wow.zoomIn
 
-        .content__skill__tag__item__card1
+        .content__skill__tag__item__card1.wow.zoomIn
           .content__skill__tag__item__card1__html
             %i.fab.fa-html5
           .content__skill__tag__item__card1__title
@@ -137,7 +139,7 @@
           .content__skill__tag__item__card1__text
             0からのコーディングが可能です。当サイトも自分でマークアップしております。
 
-        .content__skill__tag__item__card2
+        .content__skill__tag__item__card2.wow.zoomIn
           .content__skill__tag__item__card2__css
             %i.fab.fa-css3
           .content__skill__tag__item__card2__title
@@ -145,7 +147,7 @@
           .content__skill__tag__item__card2__text
             SASSを使用したページの実装が可能です。
 
-        .content__skill__tag__item__card3
+        .content__skill__tag__item__card3.wow.zoomIn
           .content__skill__tag__item__card3__js
             %i.fab.fa-js-square
           .content__skill__tag__item__card3__title
@@ -153,7 +155,7 @@
           .content__skill__tag__item__card3__text
             基本的な文法、基礎知識は学習済みです。
 
-        .content__skill__tag__item__card4
+        .content__skill__tag__item__card4.wow.zoomIn
           .content__skill__tag__item__card4__jq
             = image_tag 'image4.png' 
           .content__skill__tag__item__card4__title
@@ -161,7 +163,7 @@
           .content__skill__tag__item__card4__text
             jQueryを使い動きのあるWebサイト制作が可能です。
 
-        .content__skill__tag__item__card5
+        .content__skill__tag__item__card5.wow.zoomIn
           .content__skill__tag__item__card5__rb
             = image_tag 'ruby.png', size: '35x35'
           .content__skill__tag__item__card5__title
@@ -169,7 +171,7 @@
           .content__skill__tag__item__card5__text
             基本的な文法は学習しており、paizaラーニングでBランク獲得しています
 
-        .content__skill__tag__item__card6
+        .content__skill__tag__item__card6.wow.zoomIn
           .content__skill__tag__item__card6__rails
             %i.fab.fa-r-project
           .content__skill__tag__item__card6__title
@@ -177,7 +179,7 @@
           .content__skill__tag__item__card6__text
             フレームワークを使い0からアプリケーションを作る事が可能です。
 
-        .content__skill__tag__item__card7
+        .content__skill__tag__item__card7.wow.zoomIn
           .content__skill__tag__item__card7__git
             %i.fab.fa-git-square
           .content__skill__tag__item__card7__title
@@ -185,7 +187,7 @@
           .content__skill__tag__item__card7__text
             基本的なGitの操作が可能でチーム開発の経験もあります。制作物はGitHub上に公開しております。
 
-        .content__skill__tag__item__card8 
+        .content__skill__tag__item__card8.wow.zoomIn
           .content__skill__tag__item__card8__seo
             %i.fab.fa-adversal
           .content__skill__tag__item__card8__title
@@ -202,7 +204,7 @@
         クリックするとgithubソースコードに飛びます
       .content__works__item
         = link_to('https://github.com/itokeso/portfolio', class: 'list-content') do
-          .content__works__item__card
+          .content__works__item__card.wow.fadeIn{"data-wow-delay" => "0.5s"}
             = image_tag 'image1.png', size:"350x150"
             .content__works__item__card__title
               ポートフォリオサイト（当サイト）
@@ -210,7 +212,7 @@
               就職活動等で履歴書だけでは分からない性格的な部分まで見てもらえたらより一層お互いにとって良いマッチングになるのではないかと思い作成しました。
 
         = link_to('https://github.com/itokeso/todo-app1', class: 'list-content') do
-          .content__works__item__card
+          .content__works__item__card.wow.fadeIn{"data-wow-delay" => "0.5s"}
             = image_tag 'work1.png', size:"350x150"
             .content__works__item__card__title
               TODOリスト作成アプリ
@@ -218,7 +220,7 @@
               ただやるべきことを記入できるだけではなく、リストに関係する詳細やメモを残すことでどのようにこのタスクを終了するべきかを簡単に理解できる仕様とすることを心がけました。
           
         = link_to('https://github.com/itokeso/my_blog', class: 'list-content') do
-          .content__works__item__card
+          .content__works__item__card.wow.fadeIn{"data-wow-delay" => "0.5s"}
             = image_tag 'blog.png', size:"350x150"
             .content__works__item__card__title
               My_blog(ブログアプリ)
@@ -226,7 +228,7 @@
               My_blogは複数人で使用できるブログでログイン機能、マイページ、編集・削除機能などrailsの基礎的な部分が実装されています。
 
         = link_to('https://github.com/itokeso/pictweet', class: 'list-content') do
-          .content__works__item__card
+          .content__works__item__card.wow.fadeIn{"data-wow-delay" => "0.5s"}
             = image_tag 'pic.png', size:"350x150"
             .content__works__item__card__title
               PicTweet(写真投稿アプリ)
@@ -234,7 +236,7 @@
               画像と文字をみんなで投稿していくシンプルなサービスです。コメントも投稿する事ができ、コメント送信機能にはajaxを使用した非同期通信が出来るよう実装しています。
         
         = link_to('https://github.com/itokeso/chat', class: 'list-content') do
-          .content__works__item__card
+          .content__works__item__card.wow.fadeIn{"data-wow-delay" => "0.5s"}
             = image_tag 'chat.png', size:"350x150"
             .content__works__item__card__title
               ChatSpace(チャットアプリ)
@@ -242,7 +244,7 @@
               グループを作りグループ内でのチャットが可能です。メンバーの招待や画像送信機能・チャットの自動更新機能などが実装されています。
         
         = link_to('https://github.com/itokeso/freemarket_app_71b', class: 'list-content') do
-          .content__works__item__card
+          .content__works__item__card.wow.fadeIn{"data-wow-delay" => "0.5s"}
             = image_tag 'free.png', size:"350x150"
             .content__works__item__card__title
               Freemarket(フリマアプリ)
@@ -267,11 +269,11 @@
           
       .content__blog__item
         = link_to('https://headwaybasket.com/training/', class: 'blog-list') do
-          .content__blog__item__site
+          .content__blog__item__site.wow.fadeIn{"data-wow-delay" => "0.5s"}
             = image_tag 'trainning.jpg', size: "250x140" ,class:"blog-image"
             .content__blog__item__site__title
               筋トレ始めて１年！体はどれだけ変わった？
-        .content__blog__item__right
+        .content__blog__item__right.wow.fadeIn{"data-wow-delay" => "0.5s"}
           筋トレを始めて１年で体の変化がどれだけあったかの解説を写真で振り返りながら解説しました。
           %br/
           オススメの器具やサプリメントなどを紹介しています。
@@ -279,41 +281,41 @@
           「筋トレ 1年 変化」というキーワードで検索順位３位を獲得しました。
           
         = link_to('https://headwaybasket.com/macro-diet/', class: 'blog-list') do
-          .content__blog__item__site
+          .content__blog__item__site.wow.fadeIn{"data-wow-delay" => "0.5s"}
             = image_tag 'man.jpg', size: "250x140",class:"blog-image"
             .content__blog__item__site__title
               それで合ってる？正しいマクロ管理ダイエット法！
-        .content__blog__item__right
+        .content__blog__item__right.wow.fadeIn{"data-wow-delay" => "0.5s"}
           間違ったダイエットをしてリバウンドや体の調子を崩す人が多いので,ダイエットの基本となるマクロ管理について解説しました。
           %br/
           3大栄養素である「炭水化物」「資質」「タンパク質」のバランスやカロリーの構成やダイエットのステップを解説しています。
 
         = link_to('https://headwaybasket.com/income-tax-municipal-tax/', class: 'blog-list') do
-          .content__blog__item__site
+          .content__blog__item__site.wow.fadeIn{"data-wow-delay" => "0.5s"}
             = image_tag 'girl.jpg', size: "250x140",class:"blog-image"
             .content__blog__item__site__title
               給与明細の所得税と住民税って？
-        .content__blog__item__right
+        .content__blog__item__right.wow.fadeIn{"data-wow-delay" => "0.5s"}
           サラリーマンをしていると給与天引きで知らぬ間に色々と引かれてしまいます。
           %br/
           サラリーマンなら知っておきたい給与明細の中身について解説しています。
       
         = link_to('https://headwaybasket.com/menz-body-shaver/', class: 'blog-list') do
-          .content__blog__item__site
+          .content__blog__item__site.wow.fadeIn{"data-wow-delay" => "0.5s"}
             = image_tag 'ke.jpg', size: "250x140",class:"blog-image"
             .content__blog__item__site__title
               男も体毛を処理する時代⁉おすすめのメンズボディトリマーは？
-        .content__blog__item__right
+        .content__blog__item__right.wow.fadeIn{"data-wow-delay" => "0.5s"}
           お金の教養や筋トレだけでなく、メンズ美容についての記事もあります。
           %br/
           最近は脱毛やエステなど美容に興味がある男性も増えてきているので自分も色々やってみようと思い、自分で実験しています。
 
         = link_to('https://over-thirty-programming.info/readme/', class: 'blog-list') do
-          .content__blog__item__site
+          .content__blog__item__site.wow.fadeIn{"data-wow-delay" => "0.5s"}
             = image_tag 'gif.png', size: "250x140",class:"blog-image"
             .content__blog__item__site__title
               READMEにgif動画を貼る方法は？わかりやすく解説！
-        .content__blog__item__right
+        .content__blog__item__right.wow.fadeIn{"data-wow-delay" => "0.5s"}
           プログラミングアウトプット用のブログです。
           %br/
           READMEに製作物のgif動画を貼りたいと思い自分も調べてみました。
