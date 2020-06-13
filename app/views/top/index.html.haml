@@ -1,19 +1,29 @@
 .wrapper
   .header
     =link_to 'Keisuke Ito', "#" , class:"header__logo"
-    %i.fa.fa-bars
+    .humberger
+      .black-bg
+      .humberger__menu#menu
+        .humberger__menu__item
+          %ul
+            %li= link_to 'Home', '#'
+            %li= link_to 'About', '#about' 
+            %li= link_to 'Skills','#skills' 
+            %li= link_to 'Works', '#works'
+            %li= link_to 'Blogs','#blogs' 
+            %li= link_to 'Contact','#contact'
     .header__list
       = link_to 'Home', '#',class:"header__list__home"
-      = link_to 'About', '#' ,class:"header__list__about"
-      = link_to 'Skills','#' , class:"header__list__skills"
-      = link_to 'Works', '#', class:"header__list__works"
-      = link_to 'Blogs','#' ,class:"header__list__blog"
-      = link_to 'Contact','#', class:"header__list__contact"
-    
+      = link_to 'About', '#about' ,class:"header__list__about"
+      = link_to 'Skills','#skills' , class:"header__list__skills"
+      = link_to 'Works', '#works', class:"header__list__works"
+      = link_to 'Blogs','#blogs' ,class:"header__list__blog"
+      = link_to 'Contact','#contact', class:"header__list__contact"
+    %i.fa.fa-bars#btn
   .content
     .content__image
       = image_tag 'image1.png', class: "main__image"
-    .content__about
+    .content__about#about 
       About
     .content__main
       .content__main__left
@@ -112,7 +122,7 @@
           ⑤ paizaラーニング Bランク取得
 
 
-    .content__skill
+    .content__skill#skills
       .content__skill__tag
         Skills
       .content__skill__index
@@ -183,7 +193,7 @@
           .content__skill__tag__item__card8__text
             個人でブログ運営しており独学ですがSEOの知識・セールスライティングの知識があります。
 
-    .content__works
+    .content__works#works
       .content__works__tag
         Works
       .content__works__index
@@ -239,9 +249,9 @@
             .content__works__item__card__text
               スクールの最終課題で、チームでフリーマーケットサイトのコピーを行いました。基本的なサービスに加えて商品の出品、編集、クレジットカードでの購入などの実装がされています。
 
-    .content__blog
+    .content__blog#blogs
       .content__blog__tag
-        Blog
+        Blogs
       .content__blog__index
         2019年2月から個人ブログの運営を開始しました。
         %br/
@@ -310,7 +320,7 @@
           %br/
           画像も使い、出来るだけわかりやすく解説しています。
 
-    .content__contact
+    .content__contact#contact
       .content__contact__tag
         contact
       .content__contact__index
