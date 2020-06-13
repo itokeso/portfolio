@@ -21,5 +21,5 @@
 ![](https://raw.github.com/wiki/itokeso/portfolio/gif/image.gif)
 <br>
 <br>
-レスポンシブデザイン
+レスポンシブデザイン<br>
 ![](https://raw.github.com/wiki/itokeso/portfolio/gif/image2.gif)
