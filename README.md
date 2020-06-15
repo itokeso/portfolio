@@ -15,7 +15,10 @@
 |フレームワーク|Ruby on Rails(ver 5.2.4.1)|
 |マークアップ|HTML,CSS(Sass)|
 |データベース|MYSQL|
-|本番環境|AWS|
+|本番環境|Heroku|
+
+## 本番環境
+ https://portfolio-ito.herokuapp.com/ 
 
 ## DEMO
 ![](https://raw.github.com/wiki/itokeso/portfolio/gif/image.gif)
